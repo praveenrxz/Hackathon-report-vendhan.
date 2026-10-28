@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spice Route Kitchen</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <div class="logo" aria-hidden="true">👨‍🍳</div>
+  <div class="brand"><h1>Spice Route <span>Kitchen</span></h1><small>Authentic Flavors · Fresh Ingredients · Delivered to You</small></div>
+  <button class="ib" id="th" aria-label="Toggle dark mode">🌙</button>
+  <button class="ib" id="hs" aria-label="Search dishes">🔍</button>
+  <button class="ib" id="hc" aria-label="Go to cart">🛒<span class="badge" id="b1">0</span></button>
+</div></header>
+<div class="wrap">
+  <section class="hero">
+    <div><div class="t">Taste the Tradition</div><h2>Delicious Food,<br>Right to Your Door</h2><p>Freshly prepared · Authentic recipes · Fast delivery</p><button class="cta" id="on">Order now</button><div class="dots" id="dots"></div></div>
+    <div class="em" aria-hidden="true">🍛</div>
+  </section>
+  <div class="pills" id="pills" role="group" aria-label="Categories"></div>
+  <div class="layout">
+    <section>
+      <label class="search"><span aria-hidden="true">🔍</span><input id="q" type="search" placeholder="Search dishes by name..." aria-label="Search dishes by name"></label>
+      <div class="sh" id="menu"><h2 id="ttl">Popular Dishes</h2><button id="va">View all</button></div>
+      <div class="grid" id="grid"></div>
+    </section>
+    <div class="cartcol">
+      <aside class="box" id="cart" aria-label="Your order">
+        <h2>🛒 Your Order <span class="badge" id="b2">0</span></h2>
+        <div id="done"></div><div id="track"></div>
+        <div id="lines"></div>
+        <div id="co">
+          <div class="fd" id="fd"></div><div class="tot"><span>Total</span><span id="tt">₹0.00</span></div>
+          <h3>Delivery Details</h3>
+          <div class="row2"><select class="f" id="area" aria-label="Delivery area"></select><button id="gps" type="button">📍 Locate</button></div>
+          <div id="lm" role="status"></div>
+          <input class="f" id="nm" placeholder="Name" autocomplete="name" aria-label="Name"><div class="er" id="e1"></div>
+          <input class="f" id="ph" placeholder="Phone" inputmode="numeric" autocomplete="tel" aria-label="Phone"><div class="er" id="e2"></div>
+          <input class="f" id="ad" placeholder="Delivery address" autocomplete="street-address" aria-label="Delivery address"><div class="er" id="e3"></div>
+          <button class="po" id="po">Place order →</button>
+          <button class="cl" id="cl">🗑 Clear cart</button>
+        </div>
+      </aside>
+      <div class="box feat">
+        <div><i>🌿</i><p style="margin:0"><b>Fresh &amp; Hygienic Food</b><span>Quality you can trust</span></p></div>
+        <div><i>🛵</i><p style="margin:0"><b>Fast Delivery</b><span>Hot and fresh to your door</span></p></div>
+        <div><i>🔒</i><p style="margin:0"><b>Secure Payment</b><span>Multiple payment options</span></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
